@@ -1,8 +1,9 @@
 { "origin": ["#affixedBase#", "#modifier# #affixedBase#", "#affixedBase# #affixedBase#"]
-, "affixedBase": ["#prefix##base#", "#prefix##base#", "#prefix##base#", "#prefix##base#", "#prefix##base#", "#prefix##base#", "#prefix##base#", "#base##suffix#"]
+, "affixedBase": ["#prefix##base#", "#prefix##base#", "#prefix##base#", "#prefix##base#", "#prefix##base#", "#base##suffix#"]
 
-, "base": ["goth", "hippie", "hipster", "jock", "metal", "punk", "witch"]
-, "modifier": ["ballroom", "health", "math", "pastel", "nu", "witchy"]
-, "prefix": ["cyber", "enviro", "infra", "litho", "meta", "post", "pre", "proto", "pseudo", "techno", "vapor"]
-, "suffix": ["wave"]
+, "base": ["fairy", "geek", "glitch", "goth", "grunge", "hippie", "hipster", "jock", "metal", "prep", "punk", "witch"]
+, "modifier": ["ballroom", "future", "health", "math", "minimal", "nature", "pastel", "nu", "witchy"]
+, "prefix": ["cyber", "enviro", "infra", "litho", "meta", "nano", "post", "pre", "proto", "pseudo", "synth", "techno", "vapor", "#geographicPrefix#"]
+, "geographicPrefix": ["Brit", "J-", "K-"]
+, "suffix": ["core", "punk", "wave"]
 }
