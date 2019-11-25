@@ -1,7 +1,7 @@
 { "origin": ["#prefix##base#", "#modifier# #maybePrefix##base#", "#maybePrefix##base# #maybePrefix##base#"]
 , "maybePrefix": ["", "#prefix#"]
 
-, "base": ["goth", "hipster", "jock", "punk", "witch"]
-, "modifier": ["ballroom", "health", "witchy"]
-, "prefix": ["cyber", "enviro", "litho", "proto", "techno"]
+, "base": ["goth", "hippie", "hipster", "jock", "punk", "wave", "witch"]
+, "modifier": ["ballroom", "health", "math", "nu", "witchy"]
+, "prefix": ["cyber", "enviro", "litho", "meta", "post", "proto", "pseudo", "techno", "vapor"]
 }
