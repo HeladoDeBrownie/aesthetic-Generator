@@ -2,13 +2,13 @@
 , "affixedBase": ["#prefix##prefixable#", "#prefix##prefixable#", "#prefix##prefixable#", "#prefix##prefixable#", "#prefix##prefixable#", "#base##suffix#"]
 , "prefixable": ["#base#", "#base#", "#base#", "#suffix#"]
 
-, "base": ["fairy", "funk", "geek", "glitch", "goth", "grunge", "hippie", "hipster", "jock", "metal", "prep", "punk", "witch"]
+, "base": ["biker", "emo", "fairy", "folk", "funk", "geek", "glitch", "goth", "grunge", "hippie", "hipster", "jock", "metal", "prep", "punk", "witch"]
 
-, "modifier": ["ballroom", "future", "health", "Instagram", "math", "minimal", "nature", "operatic", "pastel", "nu", "soft", "symphonic", "witchy", "#geographicModifier#"]
+, "modifier": ["art", "ballroom", "dark", "future", "hard", "health", "Instagram", "math", "minimal", "nature", "Nintendo", "operatic", "pastel", "psychedelic", "nu", "soft", "symphonic", "witchy", "#geographicModifier#"]
 , "geographicModifier": ["New England", "Southern"]
 
-, "prefix": ["acid", "bio", "cyber", "electro", "enviro", "fem", "fuck", "infra", "litho", "mer", "meta", "nano", "post", "pre", "proto", "pseudo", "synth", "techno", "trans", "vapor", "#geographicPrefix#"]
+, "prefix": ["acid", "bio", "chill", "cyber", "e-", "electro", "enviro", "fem", "fuck", "glow", "infra", "litho", "mer", "meta", "nano", "post", "pre", "proto", "pseudo", "synth", "techno", "trans", "vapor", "#geographicPrefix#"]
 , "geographicPrefix": ["Brit", "J-", "K-"]
 
-, "suffix": ["core", "punk", "wave"]
+, "suffix": ["core", "pop", "punk", "wave"]
 }
