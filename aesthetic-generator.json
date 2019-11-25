@@ -3,5 +3,5 @@
 
 , "base": ["goth", "hippie", "hipster", "jock", "punk", "wave", "witch"]
 , "modifier": ["ballroom", "health", "math", "nu", "witchy"]
-, "prefix": ["cyber", "enviro", "litho", "meta", "post", "proto", "pseudo", "techno", "vapor"]
+, "prefix": ["cyber", "enviro", "infra", "litho", "meta", "post", "pre", "proto", "pseudo", "techno", "vapor"]
 }
