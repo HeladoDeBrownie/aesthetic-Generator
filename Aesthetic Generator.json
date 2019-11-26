@@ -5,13 +5,13 @@
 , "suffixedWord": "#suffixablePart##suffix#"
 , "suffixablePart": ["#base#", "#base#", "#base#", "#prefix##base#", "#modifier#", "#prefix#"]
 
-, "base": ["biker", "butch", "emo", "fairy", "folk", "funk", "geek", "glitch", "goth", "grunge", "hippie", "hipster", "jock", "metal", "noir", "prep", "punk", "witch"]
+, "base": ["biker", "butch", "emo", "fairy", "folk", "funk", "geek", "glitch", "goth", "grunge", "hippie", "hipster", "jock", "metal", "otaku", "noir", "prep", "punk", "witch"]
 
-, "modifier": ["art", "ballroom", "dark", "death", "future", "hard", "health", "Instagram", "math", "minimal", "nature", "neon", "Nintendo", "operatic", "pastel", "power", "psychedelic", "nu", "soft", "symphonic", "witchy", "#geographicModifier#"]
+, "modifier": ["art", "ballroom", "dark", "death", "future", "hard", "health", "Instagram", "math", "medical", "minimal", "myth", "nature", "neon", "Nintendo", "operatic", "pajama", "pastel", "power", "psychedelic", "nu", "soft", "symphonic", "witchy", "#geographicModifier#"]
 , "geographicModifier": ["Latin", "New England", "Southern"]
 
-, "prefix": ["acid", "bio", "chill", "cyber", "e-", "electro", "enviro", "fem", "fuck", "glow", "infra", "jump", "litho", "mer", "meta", "nano", "post", "pre", "proto", "pseudo", "sea", "synth", "techno", "trans", "vapor", "#geographicPrefix#"]
+, "prefix": ["acid", "bio", "care", "chill", "cyber", "e-", "electro", "enviro", "fem", "fuck", "glow", "gore", "infra", "jump", "litho", "mer", "meta", "nano", "post", "pre", "proto", "pseudo", "sea", "synth", "techno", "trans", "vapor", "#geographicPrefix#"]
 , "geographicPrefix": ["Afro", "Brit", "J-", "K-"]
 
-, "suffix": ["core", "pop", "punk", "style", "wave"]
+, "suffix": ["core", "fuck", "pop", "punk", "style", "wave"]
 }
