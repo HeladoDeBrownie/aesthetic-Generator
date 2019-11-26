@@ -1,8 +1,9 @@
-{ "origin": ["#affixedWord#", "#modifier# #affixedWord#", "#affixedWord# #affixedWord#"]
+{ "origin": ["#affixedWord#", "#modifier# #maybeAffixedWord#", "#maybeAffixedWord# #maybeAffixedWord#"]
 , "affixedWord": ["#prefixedWord#", "#prefixedWord#", "#prefixedWord#", "#prefixedWord#", "#prefixedWord#", "#suffixedWord#"]
+, "maybeAffixedWord": ["#base#", "#affixedWord#", "#affixedWord#"]
 , "prefixedWord": "#prefix##base#"
 , "suffixedWord": "#suffixablePart##suffix#"
-, "suffixablePart": ["#base#", "#base#", "#base#", "#base#", "#modifier#", "#prefix#"]
+, "suffixablePart": ["#base#", "#base#", "#base#", "#prefix##base#", "#modifier#", "#prefix#"]
 
 , "base": ["biker", "emo", "fairy", "folk", "funk", "geek", "glitch", "goth", "grunge", "hippie", "hipster", "jock", "metal", "noir", "prep", "punk", "witch"]
 
