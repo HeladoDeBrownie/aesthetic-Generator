@@ -1,13 +1,14 @@
 { "origin": ["#affixedWord#", "#modifier# #maybeAffixedWord#", "#maybeAffixedWord# #maybeAffixedWord#"]
 , "affixedWord": ["#prefixedWord#", "#prefixedWord#", "#prefixedWord#", "#prefixedWord#", "#prefixedWord#", "#suffixedWord#"]
-, "maybeAffixedWord": ["#base#", "#affixedWord#", "#affixedWord#"]
-, "prefixedWord": "#prefix##base#"
+, "maybeAffixedWord": ["#genre#", "#affixedWord#", "#affixedWord#"]
+, "prefixedWord": "#prefix##genre#"
 , "suffixedWord": "#suffixablePart##suffix#"
-, "suffixablePart": ["#base#", "#base#", "#base#", "#prefix##base#", "#modifier#", "#prefix#"]
+, "suffixablePart": ["#genre#", "#genre#", "#genre#", "#prefix##genre#", "#modifier#", "#prefix#"]
 
-, "base": ["biker", "brutalism", "butch", "emo", "fairy", "folk", "funk", "geek", "glitch", "goth", "grunge", "hippie", "hipster", "jock", "metal", "otaku", "noir", "prep", "punk", "surrealism", "witch"]
+, "genre": ["biker", "butch", "emo", "fairy", "folk", "funk", "geek", "glitch", "goth", "grunge", "hippie", "hipster", "jock", "metal", "otaku", "noir", "prep", "punk", "trucker", "witch", "#rareGenre#"]
+, "rareGenre": ["brutalist", "classical", "modernist", "realist", "surrealist"]
 
-, "modifier": ["8-bit", "art", "ballroom", "dark", "death", "future", "hard", "health", "Instagram", "lesbian", "math", "medical", "minimal", "myth", "nature", "neon", "Nintendo", "nu", "operatic", "pajama", "pastel", "power", "psychedelic", "retro", "soft", "symphonic", "witchy", "#geographicModifier#"]
+, "modifier": ["8-bit", "art", "ballroom", "dark", "death", "forest", "future", "hard", "health", "Instagram", "lesbian", "magic", "math", "medical", "minimal", "myth", "nature", "neon", "Nintendo", "nu", "operatic", "pajama", "pastel", "power", "psychedelic", "retro", "soft", "symphonic", "witchy", "#geographicModifier#"]
 , "geographicModifier": ["Latin", "New England", "Southern"]
 
 , "prefix": ["acid", "bio", "care", "chill", "cyber", "e-", "electro", "enviro", "fem", "fuck", "glow", "gore", "infra", "jump", "litho", "mer", "meta", "nano", "night", "post", "pre", "proto", "pseudo", "sea", "synth", "techno", "trans", "vapor", "#geographicPrefix#"]
