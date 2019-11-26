@@ -7,7 +7,7 @@
 
 , "base": ["biker", "butch", "emo", "fairy", "folk", "funk", "geek", "glitch", "goth", "grunge", "hippie", "hipster", "jock", "metal", "otaku", "noir", "prep", "punk", "witch"]
 
-, "modifier": ["art", "ballroom", "dark", "death", "future", "hard", "health", "Instagram", "math", "medical", "minimal", "myth", "nature", "neon", "Nintendo", "operatic", "pajama", "pastel", "power", "psychedelic", "nu", "soft", "symphonic", "witchy", "#geographicModifier#"]
+, "modifier": ["8-bit", "art", "ballroom", "dark", "death", "future", "hard", "health", "Instagram", "math", "medical", "minimal", "myth", "nature", "neon", "Nintendo", "nu", "operatic", "pajama", "pastel", "power", "psychedelic", "retro", "soft", "symphonic", "witchy", "#geographicModifier#"]
 , "geographicModifier": ["Latin", "New England", "Southern"]
 
 , "prefix": ["acid", "bio", "care", "chill", "cyber", "e-", "electro", "enviro", "fem", "fuck", "glow", "gore", "infra", "jump", "litho", "mer", "meta", "nano", "post", "pre", "proto", "pseudo", "sea", "synth", "techno", "trans", "vapor", "#geographicPrefix#"]
