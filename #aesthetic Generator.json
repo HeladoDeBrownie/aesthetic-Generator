@@ -5,10 +5,10 @@
 , "suffixedWord": "#suffixablePart##suffix#"
 , "suffixablePart": ["#genre#", "#genre#", "#genre#", "#prefix##genre#", "#modifier#", "#prefix#"]
 
-, "genre": ["biker", "butch", "emo", "fairy", "folk", "funk", "furry", "geek", "glitch", "goth", "grunge", "hippie", "hipster", "jock", "metal", "monster", "otaku", "noir", "prep", "punk", "trucker", "witch", "#rareGenre#"]
+, "genre": ["biker", "butch", "cowboy", "emo", "fairy", "folk", "funk", "furry", "geek", "glitch", "goth", "grunge", "hippie", "hipster", "jock", "metal", "monster", "otaku", "noir", "pirate", "prep", "punk", "trucker", "witch", "#rareGenre#"]
 , "rareGenre": ["brutalist", "classical", "modernist", "realist", "surrealist"]
 
-, "modifier": ["8-bit", "art", "ballroom", "dark", "death", "forest", "future", "hard", "health", "Instagram", "lesbian", "magic", "math", "medical", "minimal", "myth", "nature", "neon", "Nintendo", "nu", "operatic", "pajama", "pastel", "power", "psychedelic", "retro", "soft", "symphonic", "#geographicModifier#"]
+, "modifier": ["8-bit", "art", "ballroom", "dark", "death", "fantasy", "forest", "future", "glam", "hard", "health", "Instagram", "lesbian", "magic", "math", "medical", "minimal", "myth", "nature", "neon", "Nintendo", "nu", "operatic", "pajama", "pastel", "power", "psychedelic", "retro", "sci-fi", "soft", "symphonic", "#geographicModifier#"]
 , "geographicModifier": ["Latin", "New England", "Southern"]
 
 , "prefix": ["acid", "astro", "bio", "care", "chill", "cyber", "e-", "electro", "enviro", "fem", "fuck", "glow", "gore", "infra", "jump", "litho", "mer", "meta", "nano", "night", "post", "pre", "proto", "pseudo", "sea", "synth", "techno", "trans", "vapor", "#geographicPrefix#"]
