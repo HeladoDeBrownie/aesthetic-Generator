@@ -8,7 +8,7 @@
 , "genre": ["biker", "butch", "cowboy", "emo", "fairy", "folk", "funk", "furry", "geek", "glitch", "goth", "grunge", "hippie", "hipster", "jock", "librarian", "metal", "monster", "otaku", "noir", "pirate", "prep", "punk", "trucker", "witch", "#rareGenre#"]
 , "rareGenre": ["brutalist", "classical", "modernist", "realist", "surrealist"]
 
-, "modifier": ["8-bit", "art", "ballroom", "business", "carnival", "dark", "death", "fantasy", "forest", "future", "glam", "hard", "health", "Instagram", "lesbian", "magic", "math", "medical", "minimal", "myth", "nature", "neon", "Nintendo", "nu", "operatic", "pajama", "pastel", "postapocalypse", "power", "psychedelic", "retro", "sci-fi", "soft", "symphonic", "#geographicModifier#"]
+, "modifier": ["8-bit", "art", "ballroom", "beach", "business", "carnival", "dark", "death", "fantasy", "forest", "future", "glam", "hard", "health", "Instagram", "lesbian", "magic", "math", "medical", "minimal", "myth", "nature", "neon", "Nintendo", "nu", "operatic", "pajama", "pastel", "postapocalypse", "power", "psychedelic", "retro", "sci-fi", "soft", "symphonic", "#geographicModifier#"]
 , "geographicModifier": ["Latin", "New England", "Scandinavian", "Southern"]
 
 , "prefix": ["acid", "astro", "bio", "care", "chill", "cyber", "e-", "electro", "enviro", "fem", "fuck", "glow", "gore", "infra", "jump", "litho", "mer", "meta", "nano", "night", "post", "pre", "proto", "pseudo", "sea", "synth", "techno", "trans", "vapor", "#geographicPrefix#"]
