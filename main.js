@@ -8,7 +8,11 @@ void function () {
     })
 
     function regenerate(grammar) {
-        document.getElementById('generated-aesthetic').textContent = grammar.flatten('#origin#')
+        var aestheticName = grammar.flatten('#origin#')
+        document.getElementById('generated-aesthetic').textContent = aestheticName
+        var tweetThisElement = document.getElementById('tweet-this')
+        tweetThisElement.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.getElementsByClassName('aesthetic-description')[0].textContent + '\n#aestheticGenerator https://helado.itch.io/aesthetic-generator')
+        tweetThisElement.hidden = ''
     }
 
     var request = new XMLHttpRequest()
