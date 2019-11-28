@@ -16,6 +16,10 @@ body {
     animation: fade-in 2s;
 }
 
+a {
+    color: rgb(17,8,136);
+}
+
 @keyframes fade-in {
     from { opacity: 0; }
     to   { opacity: 1; }
