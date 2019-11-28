@@ -28,3 +28,11 @@ body {
     display: block;
     font-size: 48pt;
 }
+
+#regenerate {
+    -webkit-appearance: none;
+    background: rgb(33, 16, 33);
+    color: rgb(233, 222, 255);
+    height: 64px;
+    font-size: 16pt;
+}
