@@ -20,7 +20,7 @@ void function () {
             regenerate(grammar)
             var regenerateElement = document.getElementById('regenerate')
             regenerateElement.addEventListener('click', regenerate.bind(null, grammar))
-            regenerateElement.disabled = ''
+            regenerateElement.hidden = ''
         } else {
             throw Error("The grammar couldn't be fetched.")
         }

@@ -13,9 +13,6 @@ body {
     position: relative;
     vertical-align: middle;
     top: 128px;
-}
-
-.aesthetic-description {
     animation: fade-in 2s;
 }
 
