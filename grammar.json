@@ -1,32 +1,19 @@
 {
-    "origin": [
-        "#affixedWord#",
-        "#modifier# #maybeAffixedWord#",
-        "#maybeAffixedWord# #maybeAffixedWord#"
-    ],
-    "affixedWord": [
-        "#prefixedWord#",
-        "#prefixedWord#",
-        "#prefixedWord#",
-        "#prefixedWord#",
-        "#prefixedWord#",
-        "#suffixedWord#"
-    ],
-    "maybeAffixedWord": [
-        "#genre#",
-        "#affixedWord#",
-        "#affixedWord#"
-    ],
-    "prefixedWord": "#prefix##genre#",
-    "suffixedWord": "#suffixablePart##suffix#",
-    "suffixablePart": [
-        "#genre#",
-        "#genre#",
-        "#genre#",
-        "#prefix##genre#",
-        "#modifier#",
-        "#prefix#"
-    ],
+    "origin": ["#oneWord#", "#twoWords#", "#twoWords#"],
+
+    "oneWord":  "#onlyWord#",
+    "onlyWord": "#affixedWord#",
+
+    "twoWords":     "#firstWord# #secondWord#",
+    "firstWord":    ["#modifier#", "#maybeAffixedWord#"],
+    "secondWord":   "#maybeAffixedWord#",
+
+    "affixedWord":      ["#prefixedWord#", "#prefixedWord#", "#prefixedWord#", "#prefixedWord#", "#prefixedWord#", "#suffixedWord#"],
+    "maybeAffixedWord": ["#genre#", "#affixedWord#", "#affixedWord#"],
+    "prefixedWord":     "#prefix##genre#",
+    "suffixedWord":     "#suffixablePart##suffix#",
+    "suffixablePart":   ["#genre#", "#genre#", "#genre#", "#prefix##genre#", "#modifier#", "#prefix#"],
+
     "genre": [
         "biker",
         "butch",
@@ -34,6 +21,7 @@
         "cosplay",
         "cowboy",
         "disco",
+        "dragon",
         "emo",
         "fairy",
         "farmer",
@@ -78,18 +66,23 @@
         "princess",
         "prince"
     ],
+
     "modifier": [
         "8-bit",
+        "abstract",
         "art",
         "ballroom",
         "beach",
+        "bespoke",
         "bubblegum",
         "business",
         "candy",
         "carnival",
+        "crypt",
         "dark",
         "death",
         "deep",
+        "disaster",
         "Disney",
         "fantasy",
         "forest",
@@ -113,14 +106,15 @@
         "nu",
         "operatic",
         "pajama",
+        "pasta",
         "pastel",
         "postapocalypse",
         "power",
         "psychedelic",
         "rainbow",
-        "retro",
         "sci-fi",
         "soft",
+        "spicy",
         "swamp",
         "symphonic",
         "#geographicModifier#"
@@ -134,15 +128,18 @@
         "Southern",
         "Texas"
     ],
+
     "prefix": [
         "acid",
         "astro",
         "bio",
         "care",
         "chill",
+        "crypto",
         "cyber",
         "e-",
         "electro",
+        "endo",
         "enviro",
         "fem",
         "fuck",
@@ -153,9 +150,11 @@
         "infra",
         "jump",
         "litho",
+        "macro",
         "mecha",
         "mer",
         "meta",
+        "mono",
         "nano",
         "neo",
         "night",
@@ -164,7 +163,9 @@
         "pre",
         "proto",
         "pseudo",
+        "retro",
         "sea",
+        "steam",
         "synth",
         "techno",
         "trans",
@@ -174,10 +175,13 @@
     "geographicPrefix": [
         "Afro",
         "Brit",
+        "euro",
         "J-",
         "K-"
     ],
+
     "suffix": [
+        "beat",
         "core",
         "fuck",
         "pop",
