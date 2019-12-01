@@ -13,8 +13,8 @@ void function () {
     var request = new XMLHttpRequest
 
     request.addEventListener('load', function () {
-        if (request.status === 200 && request.response instanceof Object) {
-            var grammar = tracery.createGrammar(request.response)
+        if (request.status === 200 && typeof request.response === 'string') {
+            var grammar = tracery.createGrammar(JSON.parse(request.response))
             var rerollElement = $('reroll')
 
             rerollElement.addEventListener('click', function () {
@@ -30,6 +30,5 @@ void function () {
     })
 
     request.open('GET', 'grammar.json')
-    request.responseType = 'json'
     request.send()
 }()
