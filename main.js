@@ -4,11 +4,18 @@ void function () {
     var $ = document.getElementById.bind(document)
 
     function show(result) {
+        location.hash = encodeURIComponent(result)
+    }
+
+    addEventListener('error', show.bind(null, 'Oops, something broke.'))
+
+    function handleHashChange() {
+        var result = decodeURIComponent(location.hash.substring(1))
         $('result').textContent = result
         $('tweet').href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent($('content').textContent + '\n#aestheticGenerator https://helado.itch.io/aesthetic-generator')
     }
 
-    addEventListener('error', show.bind(null, 'Oops, something broke.'))
+    addEventListener('hashchange', handleHashChange)
 
     var request = new XMLHttpRequest
 
@@ -21,7 +28,12 @@ void function () {
                 show(grammar.flatten('#origin#'))
             })
 
-            rerollElement.click()
+            if (location.hash === '' || location.hash === '#') {
+                rerollElement.click()
+            } else {
+                handleHashChange()
+            }
+
             rerollElement.parentElement.hidden = false
             $('tweet').parentElement.hidden = false
         } else {
