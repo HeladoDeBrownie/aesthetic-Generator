@@ -7,9 +7,12 @@ html {
     font-size:      16pt;
     min-height:     100%;
     min-width:      100%;
-    padding-top:    128px;
     text-align:     center;
     vertical-align: middle;
+}
+
+body {
+    margin-top: 128px;
 }
 
 a {
