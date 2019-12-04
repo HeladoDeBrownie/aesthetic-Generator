@@ -17,30 +17,15 @@ void function () {
 
     addEventListener('hashchange', handleHashChange)
 
-    var request = new XMLHttpRequest
+    var rerollElement = $('reroll')
 
-    request.addEventListener('load', function () {
-        if (request.status === 200 && typeof request.response === 'string') {
-            var grammar = tracery.createGrammar(JSON.parse(request.response))
-            var rerollElement = $('reroll')
-
-            rerollElement.addEventListener('click', function () {
-                show(grammar.flatten('#origin#'))
-            })
-
-            if (location.hash === '' || location.hash === '#') {
-                rerollElement.click()
-            } else {
-                handleHashChange()
-            }
-
-            rerollElement.parentElement.hidden = false
-            $('tweet').parentElement.hidden = false
-        } else {
-            throw Error("Something went wrong fetching the grammar.")
-        }
+    rerollElement.addEventListener('click', function () {
+        show(grammar.flatten('#origin#'))
     })
 
-    request.open('GET', 'grammar.json')
-    request.send()
+    if (location.hash === '' || location.hash === '#') {
+        rerollElement.click()
+    } else {
+        handleHashChange()
+    }
 }()

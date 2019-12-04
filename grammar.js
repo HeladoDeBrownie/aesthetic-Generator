@@ -1,4 +1,4 @@
-{
+var grammar = tracery.createGrammar({
     "origin": ["#oneWord#", "#twoWords#", "#twoWords#"],
 
     "oneWord":  "#onlyWord#",
@@ -52,19 +52,19 @@
         "trucker",
         "twink",
         "witch",
-        "#rareGenre#"
+        "#rareGenre#",
     ],
     "rareGenre": [
         "brutalist",
         "classical",
         "modernist",
         "realist",
-        "surrealist"
+        "surrealist",
     ],
     "princex": [
         "princex",
         "princess",
-        "prince"
+        "prince",
     ],
 
     "modifier": [
@@ -117,7 +117,7 @@
         "spicy",
         "swamp",
         "symphonic",
-        "#geographicModifier#"
+        "#geographicModifier#",
     ],
     "geographicModifier": [
         "Celtic",
@@ -126,7 +126,7 @@
         "New England",
         "Scandinavian",
         "Southern",
-        "Texas"
+        "Texas",
     ],
 
     "prefix": [
@@ -170,14 +170,14 @@
         "techno",
         "trans",
         "vapor",
-        "#geographicPrefix#"
+        "#geographicPrefix#",
     ],
     "geographicPrefix": [
         "Afro",
         "Brit",
         "euro",
         "J-",
-        "K-"
+        "K-",
     ],
 
     "suffix": [
@@ -187,6 +187,6 @@
         "pop",
         "punk",
         "style",
-        "wave"
+        "wave",
     ]
-}
+})
