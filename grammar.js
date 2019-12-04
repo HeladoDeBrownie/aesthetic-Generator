@@ -1,20 +1,20 @@
 var grammar = tracery.createGrammar({
-    'origin': ['#oneWord#', '#twoWords#', '#twoWords#'],
+    origin: ['#oneWord#', '#twoWords#', '#twoWords#'],
 
-    'oneWord':  '#onlyWord#',
-    'onlyWord': '#affixedWord#',
+    oneWord:    '#onlyWord#',
+    onlyWord:   '#affixedWord#',
 
-    'twoWords':     '#firstWord# #secondWord#',
-    'firstWord':    ['#modifier#', '#maybeAffixedWord#'],
-    'secondWord':   '#maybeAffixedWord#',
+    twoWords:   '#firstWord# #secondWord#',
+    firstWord:  ['#modifier#', '#maybeAffixedWord#'],
+    secondWord: '#maybeAffixedWord#',
 
-    'affixedWord':      ['#prefixedWord#', '#prefixedWord#', '#prefixedWord#', '#prefixedWord#', '#prefixedWord#', '#suffixedWord#'],
-    'maybeAffixedWord': ['#genre#', '#affixedWord#', '#affixedWord#'],
-    'prefixedWord':     '#prefix##genre#',
-    'suffixedWord':     '#suffixablePart##suffix#',
-    'suffixablePart':   ['#genre#', '#genre#', '#genre#', '#prefix##genre#', '#modifier#', '#prefix#'],
+    affixedWord:        ['#prefixedWord#', '#prefixedWord#', '#prefixedWord#', '#prefixedWord#', '#prefixedWord#', '#suffixedWord#'],
+    maybeAffixedWord:   ['#genre#', '#affixedWord#', '#affixedWord#'],
+    prefixedWord:       '#prefix##genre#',
+    suffixedWord:       '#suffixablePart##suffix#',
+    suffixablePart:     ['#genre#', '#genre#', '#genre#', '#prefix##genre#', '#modifier#', '#prefix#'],
 
-    'genre': [
+    genre: [
         'biker',
         'butch',
         'clown',
@@ -53,25 +53,25 @@ var grammar = tracery.createGrammar({
         'witch',
         '#rareGenre#',
     ],
-    'rareGenre': [
+    rareGenre: [
         'brutalist',
         'classical',
         'modernist',
         'realist',
         'surrealist',
     ],
-    'geek': [
+    geek: [
         'geek',
         'nerd',
         'otaku',
     ],
-    'princex': [
+    princex: [
         'princex',
         'princess',
         'prince',
     ],
 
-    'modifier': [
+    modifier: [
         '8-bit',
         'abstract',
         'art',
@@ -124,7 +124,7 @@ var grammar = tracery.createGrammar({
         'symphonic',
         '#geographicModifier#',
     ],
-    'geographicModifier': [
+    geographicModifier: [
         'Celtic',
         'French',
         'Latin',
@@ -134,7 +134,7 @@ var grammar = tracery.createGrammar({
         'Texas',
     ],
 
-    'prefix': [
+    prefix: [
         'acid',
         'astro',
         'bio',
@@ -177,7 +177,7 @@ var grammar = tracery.createGrammar({
         'vapor',
         '#geographicPrefix#',
     ],
-    'geographicPrefix': [
+    geographicPrefix: [
         'Afro',
         'Brit',
         'euro',
@@ -185,7 +185,7 @@ var grammar = tracery.createGrammar({
         'K-',
     ],
 
-    'suffix': [
+    suffix: [
         'beat',
         'core',
         'fuck',
