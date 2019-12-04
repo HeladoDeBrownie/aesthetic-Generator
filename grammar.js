@@ -29,7 +29,7 @@ var grammar = tracery.createGrammar({
         "funk",
         "furry",
         "gamer",
-        "geek",
+        "#geek#",
         "glitch",
         "goth",
         "grunge",
@@ -42,7 +42,6 @@ var grammar = tracery.createGrammar({
         "librarian",
         "metal",
         "monster",
-        "otaku",
         "noir",
         "pirate",
         "prep",
@@ -60,6 +59,11 @@ var grammar = tracery.createGrammar({
         "modernist",
         "realist",
         "surrealist",
+    ],
+    "geek": [
+        "geek",
+        "nerd",
+        "otaku",
     ],
     "princex": [
         "princex",
