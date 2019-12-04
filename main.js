@@ -3,15 +3,23 @@ void function () {
 
     var $ = document.getElementById.bind(document)
 
-    function show(result) {
-        location.hash = encodeURIComponent(result)
+    function show(result, isResultOfError) {
+        if (isResultOfError === undefined) {
+            isResultOfError = false
+        }
+
+        if (isResultOfError) {
+            $('result').textContent = result
+        } else {
+            location.hash = encodeURIComponent(result)
+        }
     }
 
     function withoutHash(string) {
         return string.replace(/^#/, '')
     }
 
-    addEventListener('error', show.bind(null, 'Oops, something broke.'))
+    addEventListener('error', show.bind(null, 'Oops, something broke.', true))
 
     function handleHashChange() {
         var result = decodeURIComponent(withoutHash(location.hash))
