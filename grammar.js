@@ -1,10 +1,10 @@
 var grammar = tracery.createGrammar({
     // A generated result can be either a phrase or a single word, but, either way, it must have an affix, for the sake of making it interesting.
-    origin: ["#affixedPhrase#", "#affixedPhrase#", "#affixedWord#"],
+    origin: ['#affixedPhrase#', '#affixedPhrase#', '#affixedWord#'],
 
     // An affixed phrase always has a prefix and may also have a suffix. The prefix may be an actual prefix or a possibly affixed word.
     affixedPhrase:          '#prefixedPhrase##maybePhraseSuffix#',
-    prefixedPhrase:         "#phrasePrefixingWord# #maybeAffixedWord#",
+    prefixedPhrase:         '#phrasePrefixingWord# #maybeAffixedWord#',
     phrasePrefixingWord:    ['#phrasePrefix#', '#maybeAffixedWord#'],
     maybeAffixedWord:       ['#affixedWord#', '#affixedWord#', '#genre#'],
     maybePhraseSuffix:      ['', '', '', '', '#_maybePhraseSuffix#'],
