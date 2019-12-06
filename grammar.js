@@ -143,6 +143,7 @@ var grammar = tracery.createGrammar({
         'Scandinavian',
         'Southern',
         'Texas',
+        'Viking',
     ],
     properPhrasePrefix: [
         'Disney',
