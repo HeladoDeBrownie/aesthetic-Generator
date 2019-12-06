@@ -14,6 +14,7 @@ var grammar = tracery.createGrammar({
     suffixedWord:       '#suffixablePart##wordSuffix#',
     suffixablePart:     ['#genre#', '#genre#', '#genre#', '#wordPrefix##genre#', '#phrasePrefix#', '#wordPrefix#'],
 
+    // A genre is a core element, a real-world aesthetic that *could* stand alone to name an aesthetic, but will be modified by word and phrase affixes to form a more *interesting* aesthetic name.
     genre: [
         'biker',
         'butch',
@@ -75,6 +76,7 @@ var grammar = tracery.createGrammar({
         'surrealist',
     ],
 
+    // A phrase prefix is a word that can modify an aesthetic but can't stand alone like a genre can. Sometimes this distinction is arbitrary, and the word *could* sensibly stand alone as a genre, but we would rather not generate it as a basic element.
     phrasePrefix: [
         '8-bit',
         'abstract',
@@ -145,6 +147,7 @@ var grammar = tracery.createGrammar({
         'Nintendo',
     ],
 
+    // A word prefix is joined directly to the beginning of a word without any spaces to modify it. Sometimes the distinction between this and a phrase prefix is arbitrary, and the prefix is an actual dictionary word, but we would rather join it without spaces to another word.
     wordPrefix: [
         'acid',
         'astro',
@@ -195,6 +198,7 @@ var grammar = tracery.createGrammar({
         'K-',
     ],
 
+    // A word prefix is joined directly to the end of a word without any spaces to modify it. Usually this just adds slight flavoring to the word, although some of them can be very suggestive.
     wordSuffix: [
         'beat',
         'core',
