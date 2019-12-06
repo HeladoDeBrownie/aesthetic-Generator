@@ -5,14 +5,14 @@ var grammar = tracery.createGrammar({
     onlyWord:   '#affixedWord#',
 
     twoWords:   '#firstWord# #secondWord#',
-    firstWord:  ['#modifier#', '#maybeAffixedWord#'],
+    firstWord:  ['#phrasePrefix#', '#maybeAffixedWord#'],
     secondWord: '#maybeAffixedWord#',
 
     affixedWord:        ['#prefixedWord#', '#prefixedWord#', '#prefixedWord#', '#prefixedWord#', '#prefixedWord#', '#suffixedWord#'],
     maybeAffixedWord:   ['#genre#', '#affixedWord#', '#affixedWord#'],
-    prefixedWord:       '#prefix##genre#',
-    suffixedWord:       '#suffixablePart##suffix#',
-    suffixablePart:     ['#genre#', '#genre#', '#genre#', '#prefix##genre#', '#modifier#', '#prefix#'],
+    prefixedWord:       '#wordPrefix##genre#',
+    suffixedWord:       '#suffixablePart##wordSuffix#',
+    suffixablePart:     ['#genre#', '#genre#', '#genre#', '#wordPrefix##genre#', '#phrasePrefix#', '#wordPrefix#'],
 
     genre: [
         'biker',
@@ -54,16 +54,6 @@ var grammar = tracery.createGrammar({
         'witch',
         '#movementGenre#',
     ],
-    movementGenre: [
-        'baroque',
-        'brutalist',
-        'classical',
-        'cubist',
-        'dadaist',
-        'modernist',
-        'realist',
-        'surrealist',
-    ],
     geek: [
         'geek',
         'nerd',
@@ -74,8 +64,18 @@ var grammar = tracery.createGrammar({
         'princess',
         'prince',
     ],
+    movementGenre: [
+        'baroque',
+        'brutalist',
+        'classical',
+        'cubist',
+        'dadaist',
+        'modernist',
+        'realist',
+        'surrealist',
+    ],
 
-    modifier: [
+    phrasePrefix: [
         '8-bit',
         'abstract',
         'art',
@@ -122,10 +122,10 @@ var grammar = tracery.createGrammar({
         'spicy',
         'swamp',
         'symphonic',
-        '#geographicModifier#',
-        '#properModifier#',
+        '#geographicPhrasePrefix#',
+        '#properPhrasePrefix#',
     ],
-    geographicModifier: [
+    geographicPhrasePrefix: [
         'Celtic',
         'Euro',
         'French',
@@ -137,7 +137,7 @@ var grammar = tracery.createGrammar({
         'Southern',
         'Texas',
     ],
-    properModifier: [
+    properPhrasePrefix: [
         'Disney',
         'Hollywood',
         'Instagram',
@@ -145,7 +145,7 @@ var grammar = tracery.createGrammar({
         'Nintendo',
     ],
 
-    prefix: [
+    wordPrefix: [
         'acid',
         'astro',
         'bio',
@@ -186,16 +186,16 @@ var grammar = tracery.createGrammar({
         'techno',
         'trans',
         'vapor',
-        '#geographicPrefix#',
+        '#geographicWordPrefix#',
     ],
-    geographicPrefix: [
+    geographicWordPrefix: [
         'Afro',
         'Brit',
         'J-',
         'K-',
     ],
 
-    suffix: [
+    wordSuffix: [
         'beat',
         'core',
         'dance',
