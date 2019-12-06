@@ -1,18 +1,23 @@
 var grammar = tracery.createGrammar({
-    origin: ['#oneWord#', '#twoWords#', '#twoWords#'],
+    // A generated result can be either a phrase or a single word, but, either way, it must have an affix, for the sake of making it interesting.
+    origin: ["#affixedPhrase#", "#affixedPhrase#", "#affixedWord#"],
 
-    oneWord:    '#onlyWord#',
-    onlyWord:   '#affixedWord#',
+    // An affixed phrase always has a prefix and may also have a suffix. The prefix may be an actual prefix or a possibly affixed word.
+    affixedPhrase:          '#prefixedPhrase##maybePhraseSuffix#',
+    prefixedPhrase:         "#phrasePrefixingWord# #maybeAffixedWord#",
+    phrasePrefixingWord:    ['#phrasePrefix#', '#maybeAffixedWord#'],
+    maybeAffixedWord:       ['#affixedWord#', '#affixedWord#', '#genre#'],
+    maybePhraseSuffix:      ['', '', '', '', '#_maybePhraseSuffix#'],
+    _maybePhraseSuffix:     ['', '', '', '', ' #phraseSuffix#'],
 
-    twoWords:   '#firstWord# #secondWord#',
-    firstWord:  ['#phrasePrefix#', '#maybeAffixedWord#'],
-    secondWord: '#maybeAffixedWord#',
-
-    affixedWord:        ['#prefixedWord#', '#prefixedWord#', '#prefixedWord#', '#prefixedWord#', '#prefixedWord#', '#suffixedWord#'],
-    maybeAffixedWord:   ['#genre#', '#affixedWord#', '#affixedWord#'],
-    prefixedWord:       '#wordPrefix##genre#',
-    suffixedWord:       '#suffixablePart##wordSuffix#',
-    suffixablePart:     ['#genre#', '#genre#', '#genre#', '#wordPrefix##genre#', '#phrasePrefix#', '#wordPrefix#'],
+    // An affixed word has either a prefix or a suffix but not both, in order to avoid words that are too dense to comfortably read.
+    affixedWord:        ['#prefixedWord#', '#_affixedWord#'],
+    _affixedWord:       ['#prefixedWord#', '#prefixedWord#', '#suffixedWord#'],
+    prefixedWord:       '#wordPrefix##prefixableWord#',
+    prefixableWord:     '#genre#',
+    suffixedWord:       '#suffixableWord##wordSuffix#',
+    suffixableWord:     ['#genre#', '#genre#', '#suffixableNonGenre#'],
+    suffixableNonGenre: ['#phrasePrefix#', '#wordPrefix#'],
 
     // A genre is a core element, a real-world aesthetic that *could* stand alone to name an aesthetic, but will be modified by word and phrase affixes to form a more *interesting* aesthetic name.
     genre: [
@@ -76,7 +81,7 @@ var grammar = tracery.createGrammar({
         'surrealist',
     ],
 
-    // A phrase prefix is a word that can modify an aesthetic but can't stand alone like a genre can. Sometimes this distinction is arbitrary, and the word *could* sensibly stand alone as a genre, but we would rather not generate it as a basic element.
+    // A phrase prefix is a word that can modify an aesthetic and is similar to a genre but can't stand alone like a genre can. Sometimes this distinction is arbitrary, and the word *could* sensibly stand alone as a genre, but we would rather not generate it as such.
     phrasePrefix: [
         '8-bit',
         'abstract',
@@ -147,6 +152,15 @@ var grammar = tracery.createGrammar({
         'Nintendo',
     ],
 
+    phraseSuffix: [
+        '#DX#',
+        'kei',
+    ],
+    DX: [
+        'DX',
+        'EX',
+    ],
+
     // A word prefix is joined directly to the beginning of a word without any spaces to modify it. Sometimes the distinction between this and a phrase prefix is arbitrary, and the prefix is an actual dictionary word, but we would rather join it without spaces to another word.
     wordPrefix: [
         'acid',
@@ -203,15 +217,10 @@ var grammar = tracery.createGrammar({
         'beat',
         'core',
         'dance',
-        '-#DX#',
         'fuck',
         'pop',
         'punk',
         'style',
         'wave',
-    ],
-    DX: [
-        'DX',
-        'EX',
     ],
 })
