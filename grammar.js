@@ -130,8 +130,14 @@ var grammar = tracery.createGrammar({
         'spicy',
         'swamp',
         'symphonic',
+        '#decadePhrasePrefix#',
         '#geographicPhrasePrefix#',
         '#properPhrasePrefix#',
+    ],
+    decadePhrasePrefix: [
+        '70s',
+        '80s',
+        '90s',
     ],
     geographicPhrasePrefix: [
         'Celtic',
