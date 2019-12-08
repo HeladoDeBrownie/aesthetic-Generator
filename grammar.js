@@ -13,9 +13,9 @@ var grammar = tracery.createGrammar({
     // An affixed word has either a prefix or a suffix but not both, in order to avoid words that are too dense to comfortably read.
     affixedWord:        ['#prefixedWord#', '#_affixedWord#'],
     _affixedWord:       ['#prefixedWord#', '#prefixedWord#', '#suffixedWord#'],
-    prefixedWord:       '#wordPrefix##prefixableWord#',
+    prefixedWord:       '#wordPrefix.shy##prefixableWord#',
     prefixableWord:     '#genre#',
-    suffixedWord:       '#suffixableWord##wordSuffix#',
+    suffixedWord:       '#suffixableWord#&shy;#wordSuffix#',
     suffixableWord:     ['#genre#', '#genre#', '#suffixableNonGenre#'],
     suffixableNonGenre: ['#phrasePrefix#', '#wordPrefix#'],
 
@@ -234,3 +234,7 @@ var grammar = tracery.createGrammar({
         'wave',
     ],
 })
+
+grammar.modifiers.shy = function (string) {
+    return string + (string.endsWith('-') ? '' : '&shy;')
+}

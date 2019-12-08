@@ -9,7 +9,7 @@ void function () {
         }
 
         if (isResultOfError) {
-            $('result').textContent = result
+            $('result').innerHTML = result
         } else {
             location.hash = encodeURIComponent(result)
         }
@@ -25,7 +25,7 @@ void function () {
 
     function handleHashChange() {
         var result = decodeURIComponent(withoutHash(location.hash))
-        $('result').textContent = result
+        $('result').innerHTML = result
         $('tweet').href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent($('content').textContent + '\n#aestheticGenerator https://helado.itch.io/aesthetic-generator')
     }
 
