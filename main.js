@@ -20,6 +20,8 @@ void function () {
     }
 
     addEventListener('error', show.bind(null, 'Oops, something broke.', true))
+    $('back').addEventListener('click', history.back.bind(history))
+    $('forward').addEventListener('click', history.forward.bind(history))
 
     function handleHashChange() {
         var result = decodeURIComponent(withoutHash(location.hash))
@@ -39,5 +41,9 @@ void function () {
         rerollElement.click()
     } else {
         handleHashChange()
+    }
+
+    if (typeof Itch !== 'undefined' && Itch instanceof Object) {
+        $('back').parentElement.hidden = false
     }
 }()

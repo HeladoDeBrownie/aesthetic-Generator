@@ -19,6 +19,14 @@ a {
     color:  rgb(17,8,136);
 }
 
+button {
+    -webkit-appearance: none;
+    background:         rgb(33, 16, 33);
+    color:              rgb(233, 222, 255);
+    font-size:          75%;
+    height:             32px;
+}
+
 .information {
     color:      rgb(133,119,144);
     font-size:  75%;
@@ -34,11 +42,8 @@ a {
 }
 
 #reroll {
-    -webkit-appearance: none;
-    background:         rgb(33, 16, 33);
-    color:              rgb(233, 222, 255);
-    font-size:          100%;
-    height:             64px;
+    font-size:  100%;
+    height:     64px;
 }
 
 @keyframes fade-in {
