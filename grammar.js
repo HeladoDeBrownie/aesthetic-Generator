@@ -106,6 +106,7 @@ var grammar = tracery.createGrammar({
         'glam',
         'hard',
         'health',
+        'hell',
         'horror',
         'industrial',
         'lesbian',
@@ -130,9 +131,14 @@ var grammar = tracery.createGrammar({
         'spicy',
         'swamp',
         'symphonic',
+        '#toon#',
         '#decadePhrasePrefix#',
         '#geographicPhrasePrefix#',
         '#properPhrasePrefix#',
+    ],
+    toon: [
+        'toon',
+        'anime',
     ],
     decadePhrasePrefix: [
         '70s',
