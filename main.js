@@ -42,8 +42,4 @@ void function () {
     } else {
         handleHashChange()
     }
-
-    if (typeof Itch !== 'undefined' && Itch instanceof Object) {
-        $('back').parentElement.hidden = false
-    }
 }()
